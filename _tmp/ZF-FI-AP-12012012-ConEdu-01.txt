@@ -1,0 +1,2 @@
+1	12012012	KE	UAND	12012012	01	COP			ConEdu127116	Convenios Educativos	31	79975862		2335252501	88830		RH	01		IE	01																			Z004	79975862	Monitor en Docencia			
+1	12012012	KE	UAND	12012012	01	COP			ConEdu127116	Convenios Educativos	40	5110950002			88830	V0										181216001											98877656				79975862	Monitor en Docencia			

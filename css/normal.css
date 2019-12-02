@@ -1,0 +1,67 @@
+.Error {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	border: 1px solid #FF0000;
+	padding: 10px 10px 10px 40px;
+	margin: 5px;
+	background-color: #FFFFE1;
+	background-image: url(../img/dialog-error.png);
+	background-repeat: no-repeat;
+	background-position: 1% 50%;
+	text-align:justify;
+}
+.Warning {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	border: 1px solid #FF7F50;
+	padding: 10px 10px 10px 40px;
+	margin: 5px;
+	background-color: #FFFFE1;
+	background-image: url(../img/dialog-warning.png);
+	background-repeat: no-repeat;
+	background-position: 1% 50%;
+}
+.Notice {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	border: 1px solid #4682B4;
+	padding: 10px 10px 10px 40px;
+	margin: 5px;
+	background-color: #FFFFE1;
+	background-image: url(../img/dialog-information.png);
+	background-repeat: no-repeat;
+	background-position: 1% 50%;
+}
+.Debug {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	border: 1px solid #000000;
+	padding: 10px 10px 10px 40px;
+	margin: 5px;
+	background-color: #FFFFE1;
+	background-image: url(../img/emblem-lightning.png);
+	background-repeat: no-repeat;
+	background-position: 1% 50%;
+}
+.Success {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	border: 1px solid #628F62;
+	padding: 10px 10px 10px 40px;
+	margin: 5px;
+	background-color: #FFFFE1;
+	background-image: url(../img/emblem-success.png);
+	background-repeat: no-repeat;
+	background-position: 1% 50%;
+}
+.Info {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	border: 1px solid #628F62;
+	padding: 10px 10px 10px 40px;
+	margin: 5px;
+	background-color: #FFFFE1;
+	background-image: url(../img/emblem-important.png);
+	background-repeat: no-repeat;
+	background-position: 1% 50%;
+}

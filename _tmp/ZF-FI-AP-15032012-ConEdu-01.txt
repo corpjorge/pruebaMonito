@@ -1,0 +1,12 @@
+1	15032012	KE	UAND	15032012	03	COP			ConEdu178225	Convenios Educativos	31	1018455552		2335252501	56700		RH	01		IE	01																			Z004	1018455552	Monitor en Docencia			
+1	15032012	KE	UAND	15032012	03	COP			ConEdu178225	Convenios Educativos	40	5110950002			56700	V0										100046003											11150201				1018455552	Monitor en Docencia			
+2	15032012	KE	UAND	15032012	03	COP			ConEdu165242	Convenios Educativos	31	1151943468		2335252501	573750		RH	01		IE	01																			Z004	1151943468	Monitor en Docencia			
+2	15032012	KE	UAND	15032012	03	COP			ConEdu165242	Convenios Educativos	40	5110950002			573750	V0										100046105											11000000				1151943468	Monitor en Docencia			
+3	15032012	KE	UAND	15032012	03	COP			ConEdu177244	Convenios Educativos	31	39789582		2335252501	30870		RH	01		IE	01																			Z004	39789582	Monitor en Investigación			
+3	15032012	KE	UAND	15032012	03	COP			ConEdu177244	Convenios Educativos	40	5110950002			30870	V0										100014001											11000000				39789582	Monitor en Investigación			
+4	15032012	KE	UAND	15032012	03	COP			ConEdu179227	Convenios Educativos	31	39789582		2335252501	33480		RH	01		IE	01																			Z004	39789582	Monitor en Docencia			
+4	15032012	KE	UAND	15032012	03	COP			ConEdu179227	Convenios Educativos	40	5110950002			33480	V0										100322001											11000000				39789582	Monitor en Docencia			
+5	15032012	KE	UAND	15032012	03	COP			ConEdu176246	Convenios Educativos	31	39789582		2335252501	30870		RH	01		IE	01																			Z004	39789582	Monitor en Investigación			
+5	15032012	KE	UAND	15032012	03	COP			ConEdu176246	Convenios Educativos	40	5110950002			30870	V0										100046201											11000000				39789582	Monitor en Investigación			
+6	15032012	KE	UAND	15032012	03	COP			ConEdu166202	Convenios Educativos	31	1130683337		2335252501	483480		RH	01		IE	01																			Z004	1130683337	Monitor en Investigación			
+6	15032012	KE	UAND	15032012	03	COP			ConEdu166202	Convenios Educativos	40	5110950002			483480	V0										440061001											11000000				1130683337	Monitor en Investigación			

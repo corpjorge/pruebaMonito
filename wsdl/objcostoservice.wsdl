@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?><definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://servicios.uniandes.edu.co/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://servicios.uniandes.edu.co/" name="objcostoService">
+<types>
+<xs:schema xmlns:tns="http://servicios.uniandes.edu.co/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://servicios.uniandes.edu.co/">
+<xs:element name="consultaUsuarioObjetoCosto" type="tns:consultaUsuarioObjetoCosto"/>
+<xs:element name="consultaUsuarioObjetoCostoResponse" type="tns:consultaUsuarioObjetoCostoResponse"/>
+<xs:complexType name="consultaUsuarioObjetoCosto">
+<xs:sequence>
+<xs:element name="login" type="xs:string" minOccurs="0"/>
+<xs:element name="modulo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="consultaUsuarioObjetoCostoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:respuestaERP" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="respuestaERP">
+<xs:sequence>
+<xs:element name="error" type="tns:error" minOccurs="0"/>
+<xs:element name="obj_costo" type="tns:datosObjCosto" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="error">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+<xs:element name="mensaje" type="xs:string" minOccurs="0"/>
+<xs:element name="severidad" type="xs:string" minOccurs="0"/>
+<xs:element name="url" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="datosObjCosto">
+<xs:sequence>
+<xs:element name="descripcion" type="xs:string" minOccurs="0"/>
+<xs:element name="estado" type="xs:string" minOccurs="0"/>
+<xs:element name="objeto_costo" type="xs:string" minOccurs="0"/>
+<xs:element name="tipo_objeto" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
+</types>
+<message name="consultaUsuarioObjetoCosto">
+<part name="parameters" element="tns:consultaUsuarioObjetoCosto"/>
+</message>
+<message name="consultaUsuarioObjetoCostoResponse">
+<part name="parameters" element="tns:consultaUsuarioObjetoCostoResponse"/>
+</message>
+<portType name="objcosto">
+<operation name="consultaUsuarioObjetoCosto">
+<input message="tns:consultaUsuarioObjetoCosto"/>
+<output message="tns:consultaUsuarioObjetoCostoResponse"/>
+</operation>
+</portType>
+<binding name="objcostoPortBinding" type="tns:objcosto">
+<soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+<operation name="consultaUsuarioObjetoCosto">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+</operation>
+</binding>
+<service name="objcostoService">
+<port name="objcostoPort" binding="tns:objcostoPortBinding">
+<soap:address location="http://anserma.uniandes.edu.co:7003/erp/objcostoPort"/>
+</port>
+</service>
+</definitions>

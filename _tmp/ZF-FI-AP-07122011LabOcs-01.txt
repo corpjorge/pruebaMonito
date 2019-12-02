@@ -1,0 +1,6 @@
+1	07122011	KE	UAND	07122011	12	COP			129	Convenios Educativos	31	79703083		2335252501	6926		RH	01		IE	01																			Z004	79703083	Monitor en Docencia			
+1	07122011	KE	UAND	07122011	12	COP			129	Convenios Educativos	40	5110950002			6926	V0										181213001											11000000				79703083	Monitor en Docencia			
+2	07122011	KE	UAND	07122011	12	COP			129	Convenios Educativos	31	79703083		2335252501	16160		RH	01		IE	01																			Z004	79703083	Monitor en Docencia			
+2	07122011	KE	UAND	07122011	12	COP			129	Convenios Educativos	40	5110950002			16160	V0										182113001											11000000				79703083	Monitor en Docencia			
+3	07122011	KE	UAND	07122011	12	COP			127	Convenios Educativos	31	79975862		2335252501	88830		RH	01		IE	01																			Z004	79975862	Monitor en Docencia			
+3	07122011	KE	UAND	07122011	12	COP			127	Convenios Educativos	40	5110950002			88830	V0										181216001											98877656				79975862	Monitor en Docencia			

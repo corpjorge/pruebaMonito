@@ -1,0 +1,7 @@
+1	1	20111129	KE	UAND	20111129	11	COP			122	Convenios Educativos	31	79975862		2335252501	52.5		RH	04		IS	04																			Z004	Convenios Educativos	Monitor en Investigación			
+												40	5110950002			52.5	V0										10											4545								
+1	1	20111129	KE	UAND	20111129	11	COP			125	Convenios Educativos	31	52756329		2335252501	872.022		RH	04		IS	04																			Z004	Convenios Educativos	Monitor en Investigación			
+												40	5110950002			872.022	V0										10											4545								
+1	1	20111129	KE	UAND	20111129	11	COP			125	Convenios Educativos	31	52756329		2335252501	7647.978		RH	04		IS	04																			Z004	Convenios Educativos	Monitor en Investigación			
+												40	5110950002			7647.978	V0										101											542121								
+

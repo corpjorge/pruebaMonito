@@ -1,0 +1,2 @@
+1	31012012	KE	UAND	31012012	01	COP			ConEdu164174	Convenios Educativos	31	1018455552		2335252501	625800		RH	01		IE	01																			Z004	1018455552	Monitor en Docencia			
+1	31012012	KE	UAND	31012012	01	COP			ConEdu164174	Convenios Educativos	40	5110950002			625800	V0										100022001											11000000				1018455552	Monitor en Docencia			

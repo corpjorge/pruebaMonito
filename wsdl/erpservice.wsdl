@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8'?><definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://servicios.uniandes.edu.co/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://servicios.uniandes.edu.co/" name="erpService">
+<types>
+<xs:schema xmlns:tns="http://servicios.uniandes.edu.co/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://servicios.uniandes.edu.co/">
+<xs:element name="consultaFondosPresupuestales" type="tns:consultaFondosPresupuestales"/>
+<xs:element name="consultaFondosPresupuestalesResponse" type="tns:consultaFondosPresupuestalesResponse"/>
+<xs:element name="consultaUsuarioObjetoCosto" type="tns:consultaUsuarioObjetoCosto"/>
+<xs:element name="consultaUsuarioObjetoCostoResponse" type="tns:consultaUsuarioObjetoCostoResponse"/>
+<xs:complexType name="consultaFondosPresupuestales">
+<xs:sequence/>
+</xs:complexType>
+<xs:complexType name="consultaFondosPresupuestalesResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:respuesta" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="respuesta">
+<xs:sequence>
+<xs:element name="error" type="tns:error" minOccurs="0"/>
+<xs:element name="fondo_presupuestal" type="tns:fondosPre" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="obj_costo" type="tns:usuObjCosto" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="error">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+<xs:element name="mensaje" type="xs:string" minOccurs="0"/>
+<xs:element name="severidad" type="xs:string" minOccurs="0"/>
+<xs:element name="url" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="fondosPre">
+<xs:sequence>
+<xs:element name="beschr" type="xs:string" minOccurs="0"/>
+<xs:element name="fincode" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="usuObjCosto">
+<xs:sequence>
+<xs:element name="estado" type="xs:string" minOccurs="0"/>
+<xs:element name="ltext" type="xs:string" minOccurs="0"/>
+<xs:element name="modulo" type="xs:string" minOccurs="0"/>
+<xs:element name="objeto_costo" type="xs:string" minOccurs="0"/>
+<xs:element name="tipo_objeto" type="xs:string" minOccurs="0"/>
+<xs:element name="usuario" type="xs:string" minOccurs="0"/>
+<xs:element name="usuario_l" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="consultaUsuarioObjetoCosto">
+<xs:sequence>
+<xs:element name="numero_objeto" type="xs:string" minOccurs="0"/>
+<xs:element name="modulo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="consultaUsuarioObjetoCostoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:respuesta" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
+</types>
+<message name="consultaUsuarioObjetoCosto">
+<part name="parameters" element="tns:consultaUsuarioObjetoCosto"/>
+</message>
+<message name="consultaUsuarioObjetoCostoResponse">
+<part name="parameters" element="tns:consultaUsuarioObjetoCostoResponse"/>
+</message>
+<message name="consultaFondosPresupuestales">
+<part name="parameters" element="tns:consultaFondosPresupuestales"/>
+</message>
+<message name="consultaFondosPresupuestalesResponse">
+<part name="parameters" element="tns:consultaFondosPresupuestalesResponse"/>
+</message>
+<portType name="erp">
+<operation name="consultaUsuarioObjetoCosto">
+<input message="tns:consultaUsuarioObjetoCosto"/>
+<output message="tns:consultaUsuarioObjetoCostoResponse"/>
+</operation>
+<operation name="consultaFondosPresupuestales">
+<input message="tns:consultaFondosPresupuestales"/>
+<output message="tns:consultaFondosPresupuestalesResponse"/>
+</operation>
+</portType>
+<binding name="erpPortBinding" type="tns:erp">
+<soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+<operation name="consultaUsuarioObjetoCosto">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+</operation>
+<operation name="consultaFondosPresupuestales">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+</operation>
+</binding>
+<service name="erpService">
+<port name="erpPort" binding="tns:erpPortBinding">
+<soap:address location="http://anserma.uniandes.edu.co:7003/consultaTabla/erpPort"/>
+</port>
+</service>
+</definitions>

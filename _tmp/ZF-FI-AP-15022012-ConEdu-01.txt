@@ -1,0 +1,6 @@
+1	15022012	KE	UAND	15022012	02	COP			ConEdu177221	Convenios Educativos	31	39789582		2335252501	61740		RH	01		IE	01																			Z004	39789582	Monitor en Investigación			
+1	15022012	KE	UAND	15022012	02	COP			ConEdu177221	Convenios Educativos	40	5110950002			61740	V0										100014001											11000000				39789582	Monitor en Investigación			
+2	15022012	KE	UAND	15022012	02	COP			ConEdu178223	Convenios Educativos	31	1018455552		2335252501	56700		RH	01		IE	01																			Z004	1018455552	Monitor en Docencia			
+2	15022012	KE	UAND	15022012	02	COP			ConEdu178223	Convenios Educativos	40	5110950002			56700	V0										100046003											11150201				1018455552	Monitor en Docencia			
+3	15022012	KE	UAND	15022012	02	COP			ConEdu166202	Convenios Educativos	31	1130683337		2335252501	483480		RH	01		IE	01																			Z004	1130683337	Monitor en Investigación			
+3	15022012	KE	UAND	15022012	02	COP			ConEdu166202	Convenios Educativos	40	5110950002			483480	V0										440061001											11000000				1130683337	Monitor en Investigación			

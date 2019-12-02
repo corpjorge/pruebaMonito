@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?><definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://servicios.uniandes.edu.co/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://servicios.uniandes.edu.co/" name="contratoService">
+<types>
+<xs:schema xmlns:tns="http://servicios.uniandes.edu.co/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://servicios.uniandes.edu.co/">
+<xs:element name="consultar" type="tns:consultar"/>
+<xs:element name="consultarResponse" type="tns:consultarResponse"/>
+<xs:complexType name="consultar">
+<xs:sequence>
+<xs:element name="documento" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="consultarResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:respuestaMM" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="respuestaMM">
+<xs:sequence>
+<xs:element name="contrato" type="xs:string" minOccurs="0"/>
+<xs:element name="error" type="tns:error" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="error">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+<xs:element name="mensaje" type="xs:string" minOccurs="0"/>
+<xs:element name="severidad" type="xs:string" minOccurs="0"/>
+<xs:element name="url" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
+</types>
+<message name="consultar">
+<part name="parameters" element="tns:consultar"/>
+</message>
+<message name="consultarResponse">
+<part name="parameters" element="tns:consultarResponse"/>
+</message>
+<portType name="cFachadaMM">
+<operation name="consultar">
+<input message="tns:consultar"/>
+<output message="tns:consultarResponse"/>
+</operation>
+</portType>
+<binding name="contratoPortBinding" type="tns:cFachadaMM">
+<soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+<operation name="consultar">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+</operation>
+</binding>
+<service name="contratoService">
+<port name="contratoPort" binding="tns:contratoPortBinding">
+<soap:address location="http://anserma.uniandes.edu.co:7003/mm/contratoPort"/>
+</port>
+</service>
+</definitions>

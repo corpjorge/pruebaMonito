@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8'?><definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://servicios.uniandes.edu.co/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://servicios.uniandes.edu.co/" name="empleadoService">
+<types>
+<xs:schema xmlns:tns="http://servicios.uniandes.edu.co/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://servicios.uniandes.edu.co/">
+<xs:element name="consultaInfoEmpleado" type="tns:consultaInfoEmpleado"/>
+<xs:element name="consultaInfoEmpleadoResponse" type="tns:consultaInfoEmpleadoResponse"/>
+<xs:complexType name="consultaInfoEmpleado">
+<xs:sequence>
+<xs:element name="documento" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="consultaInfoEmpleadoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:respuestaHCM" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="respuestaHCM">
+<xs:sequence>
+<xs:element name="datosEmpleado" type="tns:datosEmpleado" minOccurs="0"/>
+<xs:element name="error" type="tns:error" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="datosEmpleado">
+<xs:sequence>
+<xs:element name="cargo" type="xs:string" minOccurs="0"/>
+<xs:element name="centro_costo" type="xs:string" minOccurs="0"/>
+<xs:element name="descripcion_cargo" type="xs:string" minOccurs="0"/>
+<xs:element name="direccion" type="xs:string" minOccurs="0"/>
+<xs:element name="documento" type="xs:string" minOccurs="0"/>
+<xs:element name="estado_civil" type="xs:string" minOccurs="0"/>
+<xs:element name="estado_laboral" type="xs:string" minOccurs="0"/>
+<xs:element name="fecha_ingreso" type="xs:string" minOccurs="0"/>
+<xs:element name="fecha_nacimiento" type="xs:string" minOccurs="0"/>
+<xs:element name="fin_lic" type="xs:string" minOccurs="0"/>
+<xs:element name="inicio_lic" type="xs:string" minOccurs="0"/>
+<xs:element name="licencia" type="xs:string" minOccurs="0"/>
+<xs:element name="login" type="xs:string" minOccurs="0"/>
+<xs:element name="moneda" type="xs:string" minOccurs="0"/>
+<xs:element name="nombre_centro_costo" type="xs:string" minOccurs="0"/>
+<xs:element name="porc_ret" type="xs:string" minOccurs="0"/>
+<xs:element name="primer_apellido" type="xs:string" minOccurs="0"/>
+<xs:element name="primer_nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="prod_ret" type="xs:string" minOccurs="0"/>
+<xs:element name="segundo_apellido" type="xs:string" minOccurs="0"/>
+<xs:element name="segundo_nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="sexo" type="xs:string" minOccurs="0"/>
+<xs:element name="sueldo" type="xs:string" minOccurs="0"/>
+<xs:element name="tipo_contrato" type="xs:string" minOccurs="0"/>
+<xs:element name="tipo_documento" type="xs:string" minOccurs="0"/>
+<xs:element name="tipo_nomina" type="xs:string" minOccurs="0"/>
+<xs:element name="tipo_sueldo" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="error">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+<xs:element name="mensaje" type="xs:string" minOccurs="0"/>
+<xs:element name="severidad" type="xs:string" minOccurs="0"/>
+<xs:element name="url" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
+</types>
+<message name="consultaInfoEmpleado">
+<part name="parameters" element="tns:consultaInfoEmpleado"/>
+</message>
+<message name="consultaInfoEmpleadoResponse">
+<part name="parameters" element="tns:consultaInfoEmpleadoResponse"/>
+</message>
+<portType name="empleado">
+<operation name="consultaInfoEmpleado">
+<input message="tns:consultaInfoEmpleado"/>
+<output message="tns:consultaInfoEmpleadoResponse"/>
+</operation>
+</portType>
+<binding name="empleadoPortBinding" type="tns:empleado">
+<soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+<operation name="consultaInfoEmpleado">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+</operation>
+</binding>
+<service name="empleadoService">
+<port name="empleadoPort" binding="tns:empleadoPortBinding">
+<soap:address location="http://anserma.uniandes.edu.co:7003/hcm/empleadoPort"/>
+</port>
+</service>
+</definitions>
