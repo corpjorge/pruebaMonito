@@ -89,7 +89,7 @@ class QuestionSeeder extends Seeder
         DB::table('questions')->insert([
             'id' => 9,
             'title' => 'El día de la familia FEDEF, en el año 2017, se celebró en:',
-            'answer' => '8_c',
+            'answer' => '9_c',
             'choices' => '{ "a": "Un parque de Madrid", "b": "Un coliseo de Facatativá", "c": "Un polideportivo de Funza", "d": "El parque de La Florida en Bogotá"}',
             'created_at' => now(),
             'updated_at' => now()
@@ -98,8 +98,152 @@ class QuestionSeeder extends Seeder
         DB::table('questions')->insert([
             'id' => 10,
             'title' => 'El auxilio de defunción lo otorga FEDEF, por',
-            'answer' => '8_c',
+            'answer' => '10_c',
             'choices' => '{ "a": "Fallecimiento por cualquier causa", "b": "Fallecimiento por causas diferentes a Covid19 y suicidio", "c": "Fallecimiento por cualquier causa excepto suicidio", "d": "Fallecimiento por cualquier causa excepto homicidio"}',
+            'created_at' => now(),
+            'updated_at' => now()
+        ]);
+
+        DB::table('questions')->insert([
+            'id' => 11,
+            'title' => '¿Cuál es el porcentaje de ahorro en los aportes sociales?',
+            'answer' => '11_a',
+            'choices' => '{ "a": "2.4%", "b": "4.0%", "c": "1.6%", "d": "3.0%"}',
+            'created_at' => now(),
+            'updated_at' => now()
+        ]);
+
+        DB::table('questions')->insert([
+            'id' => 12,
+            'title' => '¿El pago obligatorio de los $6.100 mensuales, cubre?',
+            'answer' => '12_b',
+            'choices' => '{ "a": "Póliza funeraria", "b": "Auxilio defunción", "c": "Seguro de vida", "d": "Seguro de Hogar" }',
+            'created_at' => now(),
+            'updated_at' => now()
+        ]);
+
+        DB::table('questions')->insert([
+            'id' => 13,
+            'title' => '¿Cuáles son los beneficiarios del Asociado con FEDEF?',
+            'answer' => '13_a',
+            'choices' => '{ "a": "Padres/cónyuge/hijos", "b": "Padres/hijos/Hermanos", "c": "Padres/Abuelos/tíos", "d": "Ninguna de las anteriores" }',
+            'created_at' => now(),
+            'updated_at' => now()
+        ]);
+
+        DB::table('questions')->insert([
+            'id' => 14,
+            'title' => '¿Requisitos para postularse al auxilio educativo?',
+            'answer' => '14_d',
+            'choices' => '{ "a": "Antigüedad mínimo 1 año", "b": "Actualización de datos", "c": "Cumplimiento en los pagos", "d": "Todas las anteriores" }',
+            'created_at' => now(),
+            'updated_at' => now()
+        ]);
+
+        DB::table('questions')->insert([
+            'id' => 15,
+            'title' => '¿De cuál ahorro voluntario puede disponer el Asociado, cuando lo requiera?',
+            'answer' => '15_c',
+            'choices' => '{ "a": "Vivienda", "b": "Navideño", "c": "Vista", "d": "CDAT" }',
+            'created_at' => now(),
+            'updated_at' => now()
+        ]);
+
+        DB::table('questions')->insert([
+            'id' => 16,
+            'title' => '¿Cada cuánto tiempo  debo realizar mi actualización de datos?',
+            'answer' => '16_0',
+            'choices' => '{ "a": "3 AÑOS", "b": "1 AÑO", "c": "5 AÑOS", "d": "2 AÑOS" }',
+            'created_at' => now(),
+            'updated_at' => now()
+        ]);
+
+        DB::table('questions')->insert([
+            'id' => 17,
+            'title' => '¿Con qué canales cuenta FEDEF para realizar mis pagos?',
+            'answer' => '17_0',
+            'choices' => '{ "a": "PSE, BANCO BOGOTA, TRANSFERENCIA ELECTRONICA", "b": "PUNTOS DE PAGO EN LAS OFICINAS ", "c": "EFECTY, SERVIENTREGA, DIMONEX", "d": "TODAS LAS ANTERIORES" }',
+            'created_at' => now(),
+            'updated_at' => now()
+        ]);
+
+        DB::table('questions')->insert([
+            'id' => 18,
+            'title' => '¿Cuáles son los canales de los que dispone FEDEF para mi  atención ?',
+            'answer' => '18_0',
+            'choices' => '{ "a": "OFICINAS, LINEAS TELEFONICAS", "b": "WHATSAPP, CORREO ELECTRONICO", "c": "REDES SOCIALES", "d": "TODAS LAS ANTERIORES" }',
+            'created_at' => now(),
+            'updated_at' => now()
+        ]);
+
+        DB::table('questions')->insert([
+            'id' => 19,
+            'title' => '¿Dónde puedo conocer noticias y actualizaciones de Fedef ?',
+            'answer' => '19_0',
+            'choices' => '{ "a": "PERIODICO", "b": "REVISTAS", "c": "REDES SOCIALES, PAGINA WEB Y OFICINAS", "d": "NUNGUNA DE LAS ANTERIORES" }',
+            'created_at' => now(),
+            'updated_at' => now()
+        ]);
+
+        DB::table('questions')->insert([
+            'id' => 20,
+            'title' => 'En que año se creó el fondo FEDEF',
+            'answer' => '20_c',
+            'choices' => '{ "a": "1980", "b": "1977", "c": "1971", "d": "1950" }',
+            'created_at' => now(),
+            'updated_at' => now()
+        ]);
+
+        DB::table('questions')->insert([
+            'id' => 21,
+            'title' => 'En que año se creó el fondo FEDEF',
+            'answer' => '21_c',
+            'choices' => '{ "a": "1980", "b": "1977", "c": "1971", "d": "1950" }',
+            'created_at' => now(),
+            'updated_at' => now()
+        ]);
+
+        DB::table('questions')->insert([
+            'id' => 22,
+            'title' => 'Que tasa de reconocimiento tiene el ahorro de vivienda',
+            'answer' => '22_c',
+            'choices' => '{ "a": "2% EA", "b": "4% EA", "c": "6% EA", "d": "Ninguna de las anteriores" }',
+            'created_at' => now(),
+            'updated_at' => now()
+        ]);
+
+        DB::table('questions')->insert([
+            'id' => 23,
+            'title' => 'El crédito de calamidad Domestica se presta para',
+            'answer' => '23_d',
+            'choices' => '{ "a": "Gastos médicos no cubiertos por el POS", "b": "Gastos odontológicos", "c": "Gastos oftalmológicos", "d": "Todas las anteriores" }',
+            'created_at' => now(),
+            'updated_at' => now()
+        ]);
+
+        DB::table('questions')->insert([
+            'id' => 24,
+            'title' => 'Una de las condiciones del crédito especial de vivienda es',
+            'answer' => '24_c',
+            'choices' => '{ "a": "56 meses", "b": "Un codeudor", "c": "Llevar como mínimo 2 años de antigüedad continuos en Fedef", "d": "Todas las anteriores" }',
+            'created_at' => now(),
+            'updated_at' => now()
+        ]);
+
+        DB::table('questions')->insert([
+            'id' => 25,
+            'title' => 'El horario de atención de Funza es:',
+            'answer' => '25_d',
+            'choices' => '{ "a": "1pm a 5 pm", "b": "8am a 1 pm", "c": "8am a 3 pm", "d": "Lunes a viernes de 9 am – 5 pm sábados de 9 am – 2 pm" }',
+            'created_at' => now(),
+            'updated_at' => now()
+        ]);
+
+        DB::table('questions')->insert([
+            'id' => 26,
+            'title' => 'Las oficinas de Fedef están ubicadas en:',
+            'answer' => '26_b',
+            'choices' => '{ "a": "tokio, roma, Suba", "b": "Funza, Facatativá, Suba", "c": "Zipaquirá, Cartagena, Funza", "d": "Fusagasugá, Facatativá, Madrid" }',
             'created_at' => now(),
             'updated_at' => now()
         ]);
