@@ -15,7 +15,7 @@ class SlotsController extends Controller
         $rand_two = '-'.rand(1,120120);
         $rand_three = '-'.rand(1,120120);
 
-        $img = rand(1,4);
+        $img = rand(1,2);
 
         if ($win){
             $option = 11;
