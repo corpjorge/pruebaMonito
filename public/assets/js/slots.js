@@ -1025,6 +1025,7 @@ Slot.prototype = {
      * @param bet
      */
     spin: function(bet) {
+        console.log(bet)
         this.bet = bet || this.bet;
         if (this.gameState != this.states.REST) return;
         if (this.credits < this.bet) return;

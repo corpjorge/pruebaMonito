@@ -18153,17 +18153,14 @@ __webpack_require__.r(__webpack_exports__);
 /* provided dependency */ var process = __webpack_require__(/*! process/browser */ "./node_modules/process/browser.js");
 
 
-var routes = [{
+var routes = [// {
+//     path: '/',
+//     name: 'root',
+//     component: () => import('../views/Login'),
+//     meta: { requiresAuth: false }
+// },
+{
   path: '/',
-  name: 'root',
-  component: function component() {
-    return __webpack_require__.e(/*! import() */ "resources_js_views_Login_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../views/Login */ "./resources/js/views/Login.vue"));
-  },
-  meta: {
-    requiresAuth: false
-  }
-}, {
-  path: '/list',
   name: 'List',
   component: function component() {
     return __webpack_require__.e(/*! import() */ "resources_js_views_List_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../views/List */ "./resources/js/views/List.vue"));
@@ -18176,6 +18173,15 @@ var routes = [{
   name: 'Questions',
   component: function component() {
     return __webpack_require__.e(/*! import() */ "resources_js_views_Questions_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../views/Questions */ "./resources/js/views/Questions.vue"));
+  },
+  meta: {
+    requiresAuth: true
+  }
+}, {
+  path: '/slots',
+  name: 'Slots',
+  component: function component() {
+    return __webpack_require__.e(/*! import() */ "resources_js_views_Slots_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../views/Slots */ "./resources/js/views/Slots.vue"));
   },
   meta: {
     requiresAuth: true
@@ -18194,23 +18200,28 @@ var router = (0,vue_router__WEBPACK_IMPORTED_MODULE_1__.createRouter)({
       top: 0
     };
   }
-});
-router.beforeEach(function (to) {
-  _store__WEBPACK_IMPORTED_MODULE_0__.default.dispatch('Auth/getUser');
-  var type = localStorage.getItem("type");
+}); // router.beforeEach((to) => {
+//
+//     store.dispatch('Auth/getUser')
+//     const type = localStorage.getItem("type");
+//
+//     console.log(to.meta.requiresAuth)
+//     console.log(store.getters['Auth/loggedIn'])
+//     console.log(to.meta.requiresAuth && !store.getters['Auth/loggedIn'])
+//
+//     if (to.meta.requiresAuth && !store.getters['Auth/loggedIn']) {
+//         return {
+//             name: 'root'
+//         }
+//     }
+//
+//     if (to.meta.type < type ) {
+//         return {
+//             name: 'root'
+//         }
+//     }
+// })
 
-  if (to.meta.requiresAuth && !_store__WEBPACK_IMPORTED_MODULE_0__.default.getters["Auth/loggedIn"]) {
-    return {
-      name: 'root'
-    };
-  }
-
-  if (to.meta.type < type) {
-    return {
-      name: 'root'
-    };
-  }
-});
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (router);
 
 /***/ }),
@@ -23745,7 +23756,7 @@ var index = {
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_views_Login_vue":1,"resources_js_views_List_vue":1,"resources_js_views_Questions_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_views_List_vue":1,"resources_js_views_Questions_vue":1,"resources_js_views_Slots_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

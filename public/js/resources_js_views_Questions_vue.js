@@ -62,7 +62,7 @@ __webpack_require__.r(__webpack_exports__);
       });
     },
     participate: function participate() {
-      window.location.assign("/slots");
+      window.location.assign("/slots"); // this.$router.push({ name: 'Slots' })
     },
     close: function close() {
       this.show = false;

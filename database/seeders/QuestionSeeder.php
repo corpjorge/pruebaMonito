@@ -18,7 +18,7 @@ class QuestionSeeder extends Seeder
             'id' => 1,
             'title' => 'Pregunta 1',
             'answer' => '1_d',
-            'choices' => '{ "a": "jorge a", "b": "jorge b", "c": "jorge c", "d": "jorge d"}',
+            'choices' => '{ "a": "jorge a", "b": "jorge b", "c": "jorge c", "d": "jorge d (correcta)"}',
             'created_at' => now(),
             'updated_at' => now()
         ]);
@@ -27,7 +27,7 @@ class QuestionSeeder extends Seeder
             'id' => 2,
             'title' => 'Pregunta 2',
             'answer' => '2_c',
-            'choices' => '{ "a": "jorge a", "b": "jorge b", "c": "jorge c", "d": "jorge d"}',
+            'choices' => '{ "a": "jorge a", "b": "jorge b", "c": "jorge c (correcta)", "d": "jorge d"}',
             'created_at' => now(),
             'updated_at' => now()
         ]);
@@ -36,7 +36,7 @@ class QuestionSeeder extends Seeder
             'id' => 3,
             'title' => 'Pregunta 3',
             'answer' => '3_b',
-            'choices' => '{ "a": "jorge a", "b": "jorge b", "c": "jorge c", "d": "jorge d"}',
+            'choices' => '{ "a": "jorge a", "b": "jorge b (correcta)", "c": "jorge c", "d": "jorge d"}',
             'created_at' => now(),
             'updated_at' => now()
         ]);
@@ -45,7 +45,7 @@ class QuestionSeeder extends Seeder
             'id' => 4,
             'title' => 'Pregunta 4',
             'answer' => '4_a',
-            'choices' => '{ "a": "jorge a", "b": "jorge b", "c": "jorge c", "d": "jorge d"}',
+            'choices' => '{ "a": "jorge a (correcta)", "b": "jorge b", "c": "jorge c", "d": "jorge d"}',
             'created_at' => now(),
             'updated_at' => now()
         ]);
@@ -54,7 +54,7 @@ class QuestionSeeder extends Seeder
             'id' => 5,
             'title' => 'Pregunta 5',
             'answer' => '5_a',
-            'choices' => '{ "a": "jorge a", "b": "jorge b", "c": "jorge c", "d": "jorge d"}',
+            'choices' => '{ "a": "jorge a (correcta)", "b": "jorge b", "c": "jorge c", "d": "jorge d"}',
             'created_at' => now(),
             'updated_at' => now()
         ]);
@@ -63,7 +63,7 @@ class QuestionSeeder extends Seeder
             'id' => 6,
             'title' => 'Pregunta 6',
             'answer' => '6_b',
-            'choices' => '{ "a": "jorge a", "b": "jorge b", "c": "jorge c", "d": "jorge d"}',
+            'choices' => '{ "a": "jorge a", "b": "jorge b (correcta)", "c": "jorge c", "d": "jorge d"}',
             'created_at' => now(),
             'updated_at' => now()
         ]);
@@ -72,7 +72,7 @@ class QuestionSeeder extends Seeder
             'id' => 7,
             'title' => 'Pregunta 7',
             'answer' => '7_c',
-            'choices' => '{ "a": "jorge a", "b": "jorge b", "c": "jorge c", "d": "jorge d"}',
+            'choices' => '{ "a": "jorge a", "b": "jorge b", "c": "jorge c (correcta)", "d": "jorge d"}',
             'created_at' => now(),
             'updated_at' => now()
         ]);
@@ -81,7 +81,7 @@ class QuestionSeeder extends Seeder
             'id' => 8,
             'title' => 'Pregunta 8',
             'answer' => '8_d',
-            'choices' => '{ "a": "jorge a", "b": "jorge b", "c": "jorge c", "d": "jorge d"}',
+            'choices' => '{ "a": "jorge a", "b": "jorge b", "c": "jorge c", "d": "jorge d (correcta)"}',
             'created_at' => now(),
             'updated_at' => now()
         ]);

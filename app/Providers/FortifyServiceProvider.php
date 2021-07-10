@@ -32,26 +32,26 @@ class FortifyServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        Fortify::loginView(function () {
+            return view('auth.login');
+        });
+
         Fortify::authenticateUsing(function (Request $request) {
             $user = User::where('document', $request->document)->first();
             if ($user) {  return $user; }
         });
 
+        Fortify::createUsersUsing(CreateNewUser::class);
+        Fortify::updateUserProfileInformationUsing(UpdateUserProfileInformation::class);
+        Fortify::updateUserPasswordsUsing(UpdateUserPassword::class);
+        Fortify::resetUserPasswordsUsing(ResetUserPassword::class);
 
+        RateLimiter::for('login', function (Request $request) {
+            return Limit::perMinute(5)->by($request->email.$request->ip());
+        });
 
-//        Fortify::createUsersUsing(CreateNewUser::class);
-//        Fortify::updateUserProfileInformationUsing(UpdateUserProfileInformation::class);
-//        Fortify::updateUserPasswordsUsing(UpdateUserPassword::class);
-//        Fortify::resetUserPasswordsUsing(ResetUserPassword::class);
-
-
-
-//        RateLimiter::for('login', function (Request $request) {
-//            return Limit::perMinute(5)->by($request->email.$request->ip());
-//        });
-
-//        RateLimiter::for('two-factor', function (Request $request) {
-//            return Limit::perMinute(5)->by($request->session()->get('login.id'));
-//        });
+        RateLimiter::for('two-factor', function (Request $request) {
+            return Limit::perMinute(5)->by($request->session()->get('login.id'));
+        });
     }
 }
