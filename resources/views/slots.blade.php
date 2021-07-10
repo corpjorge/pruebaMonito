@@ -137,6 +137,14 @@
                 outline: none;
             }
 
+            .lost {
+                text-align: center;
+                background-color: #91ed6d4a;
+                max-width: 293px;
+                padding: 5px;
+                margin-top: 22%;
+            }
+
 
 
 
@@ -175,12 +183,8 @@
     </div>
 
     <div class="modal fade show" id="lost" tabindex="-1" aria-labelledby="exampleModalLabel"  aria-modal="true" role="dialog">
-        <div class="modal-dialog" style="text-align: center;">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <img src="/assets/img/concurso/L{{$img}}.png" style="width: 282px;" alt="Perdiste">
-                </div>
-            </div>
+        <div class="modal-dialog lost" style="text-align: center;">
+            <img src="/assets/img/concurso/L{{$img}}.png" style="width: 282px;" alt="Perdiste">
         </div>
     </div>
 
