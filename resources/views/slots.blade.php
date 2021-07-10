@@ -126,7 +126,7 @@
                 padding: 12px 42px;
                 border-radius: 12px;
                 font-size: 1.25rem;
-                background: hsl(345deg 100% 47%);
+                background: hsl(130deg 60% 41%);
                 color: white;
                 transform: translateY(-4px);
             }
@@ -145,7 +145,7 @@
     <body>
 
     <video autoplay muted loop id="myVideo">
-        <source src="/assets/img/concurso/fondo.mp4" type="video/mp4">
+        <source src="/assets/img/concurso/fondo2.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
     </video>
 
