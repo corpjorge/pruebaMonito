@@ -150,6 +150,8 @@
     </head>
     <body>
 
+    <canvas id="my-canvas"></canvas>
+
     <div class="centro">
         <div class="walk-container" id="walk-container-one">
             <div></div>
@@ -175,7 +177,9 @@
             <img src="/assets/img/concurso/lose.png" style="width: 282px;" alt="Perdiste">
         </div>
     </div>
-<!--    <script src="/assets/js/confetti.js"></script>-->
+
+
+    <script src="/assets/js/confetti.js"></script>
 
     <script>
         function run() {
@@ -208,6 +212,12 @@
 
         }
 
+    </script>
+
+    <script>
+        var confettiSettings = { target: 'my-canvas' };
+        var confetti = new ConfettiGenerator(confettiSettings);
+        confetti.render();
     </script>
 
     </body>
