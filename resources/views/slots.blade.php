@@ -150,7 +150,7 @@
     </head>
     <body>
 
-    <canvas id="my-canvas"></canvas>
+<!--    <canvas id="my-canvas"></canvas>-->
 
     <div class="centro">
         <div class="walk-container" id="walk-container-one">
