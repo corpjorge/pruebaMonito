@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <img src="assets/img/concurso/banner.jpg" alt="" style="width: 100%; height: 157px;"/>
+        <img src="assets/img/concurso/banner.jpg" alt="" style="width: 100%;"/>
         <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
             <div class="col-md-6 px-0">
                 <p class="lead my-3">Responde de manera correcta las preguntas para poder participar en el sorteo.</p>

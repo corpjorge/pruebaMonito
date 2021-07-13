@@ -99,8 +99,7 @@ var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
   src: "assets/img/concurso/banner.jpg",
   alt: "",
   style: {
-    "width": "100%",
-    "height": "157px"
+    "width": "100%"
   }
 }, null, -1
 /* HOISTED */
