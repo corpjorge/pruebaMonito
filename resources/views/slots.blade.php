@@ -32,11 +32,11 @@
             .walk-container > div {
                 display: inline-block;
                 position: absolute;
-                top: -38px;
+                top: -32px;
                 left: 0px;
                 width: 128px;
                 /*height: 202px;*/
-                height: 191px;
+                height: 169px;
                 background: url('/assets/img/concurso/icons1.png') repeat-y;
                 background-position-x: 9px;
             }
