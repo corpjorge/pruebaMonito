@@ -44,7 +44,7 @@
                         <p>Ingresa tu numero de cedula y participa para ganar increíbles premios.</p>
                     </div>
                     <div class="image">
-                        <img src="/assets/img/concurso/login.jpg" alt="" class="w-100">
+                        <img src="/assets/img/concurso/login.png" alt="" class="w-100">
                     </div>
                 </div>
             </div>

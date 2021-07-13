@@ -44,7 +44,11 @@ var _withId = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.withScopeId)("dat
 
 var _hoisted_1 = {
   id: "about",
-  "class": "about-section about-style-1"
+  "class": "about-section about-style-1",
+  style: {
+    "background": "#e2e2e2",
+    "padding": "100px 0 140px"
+  }
 };
 var _hoisted_2 = {
   "class": "container"
@@ -78,9 +82,12 @@ var _hoisted_7 = {
 var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"single-item\" data-v-3b49113d><div class=\"icon\" data-v-3b49113d><i class=\"lni lni-pencil-alt\" data-v-3b49113d></i></div><div class=\"text\" data-v-3b49113d><h6 class=\"mb-10\" data-v-3b49113d>Encuesta</h6><p data-v-3b49113d>Responde las preguntas de manera correcta. </p></div></div><div class=\"single-item\" data-v-3b49113d><div class=\"icon\" data-v-3b49113d><i class=\"lni lni-medall\" data-v-3b49113d></i></div><div class=\"text\" data-v-3b49113d><h6 class=\"mb-10\" data-v-3b49113d>Concurso</h6><p data-v-3b49113d>3 oportunidades para gira y lograr los tres logos ganadores.</p></div></div>", 2);
 
 var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "about-image"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("            <img src=\"assets/img/about/about-1/about-img-1.jpg\" alt=\"\">"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
-  src: "assets/img/about/about-1/about-img-1.jpg",
+  "class": "about-image",
+  style: {
+    "height": "100%"
+  }
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+  src: "assets/img/concurso/lista.png",
   alt: ""
 })], -1
 /* HOISTED */
@@ -89,11 +96,12 @@ var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
 
 var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("section", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [_hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_7, [_hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("section", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [_hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_7, [_hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
     onClick: _cache[1] || (_cache[1] = function () {
       return $options.next && $options.next.apply($options, arguments);
     }),
-    "class": "read-more-button",
+    "class": "button button-lg radius-10 btn-block",
+    type: "button",
     style: {
       "cursor": "pointer"
     }

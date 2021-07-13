@@ -1,5 +1,5 @@
 <template>
-    <section id="about" class="about-section about-style-1">
+    <section id="about" class="about-section about-style-1" style="background: #e2e2e2; padding: 100px 0 140px;">
         <div class="container">
             <div class="row">
                 <div class="col-xl-5 offset-xl-7 col-lg-6 offset-lg-6">
@@ -30,15 +30,14 @@
                                 </div>
                             </div>
 
-                            <a @click="next" class="read-more-button" style="cursor: pointer;">Comenzar</a>
+                            <button @click="next" class="button button-lg radius-10 btn-block" type="button" style="cursor: pointer;">Comenzar</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="about-image">
-<!--            <img src="assets/img/about/about-1/about-img-1.jpg" alt="">-->
-            <img src="assets/img/about/about-1/about-img-1.jpg" alt="">
+        <div class="about-image" style="height: 100%;">
+            <img src="assets/img/concurso/lista.png" alt="">
         </div>
     </section>
 

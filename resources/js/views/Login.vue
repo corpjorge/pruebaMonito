@@ -6,10 +6,10 @@
                     <div class="signup-content-wrapper">
                         <div class="section-title">
                             <h3 class="mb-20">Concursa por grandes premios</h3>
-                            <p>Ingresa tu numero de cedula y participa para ganar increíbles premios.</p>
+                            <p>Ingresa tu número  de cédula y participa para ganar increíbles premios.</p>
                         </div>
                         <div class="image">
-                            <img src="/assets/img/concurso/login.jpg" alt="" class="w-100">
+                            <img src="/assets/img/concurso/login.png" alt="" class="w-100">
                         </div>
                     </div>
                 </div>
@@ -28,9 +28,9 @@
                     <div class="signup-form-wrapper">
                         <div class="signup-form">
                             <div class="single-input">
-                                <label htmlFor="signup-password">Cedula</label>
+                                <label htmlFor="signup-password">Cédula</label>
                                 <input type="number" id="signup-password" name="signup-password"
-                                       placeholder="Ingrese cedula" v-model="document">
+                                       placeholder="Ingresa cedula" v-model="document">
                             </div>
                             <div class="form-check mb-25">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">

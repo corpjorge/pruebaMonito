@@ -15,21 +15,28 @@
         <link rel="stylesheet" href="/assets/css/lindy-uikit.css"/>
         <style>
 
+            body {
+                margin: 0;
+                background-image: url("/assets/img/concurso/maquina.jpg");
+                background-repeat: no-repeat;
+                background-size: 100% 150%;
+            }
+
             .walk-container {
                 display: inline-block;
                 position: relative;
-                width: 11%;
+                width: 9%;
                 vertical-align: middle;
             }
 
             .walk-container > div {
                 display: inline-block;
                 position: absolute;
-                top: 6px;
-                left: 0;
+                top: -28px;
+                left: -9px;
                 width: 128px;
                 /*height: 202px;*/
-                height: 190px;
+                height: 177px;
                 background: url('/assets/img/concurso/icons1.png') repeat-y;
                 background-position-x: 9px;
             }
@@ -146,30 +153,19 @@
             }
 
 
-
-
         </style>
     </head>
     <body>
 
-    <video autoplay muted loop id="myVideo">
-        <source src="/assets/img/concurso/fondo2.mp4" type="video/mp4">
-        Your browser does not support HTML5 video.
-    </video>
-
-
     <div class="centro">
         <div class="walk-container" id="walk-container-one">
             <div></div>
-            <img src="/assets/img/concurso/reel2.png" alt="img"/>
         </div>
         <div class="walk-container" id="walk-container-two">
             <div></div>
-            <img src="/assets/img/concurso/reel2.png" alt="img"/>
         </div>
         <div class="walk-container" id="walk-container-three">
             <div></div>
-            <img src="/assets/img/concurso/reel2.png" alt="img"/>
         </div>
     </div>
 
@@ -184,7 +180,7 @@
 
     <div class="modal fade show" id="lost" tabindex="-1" aria-labelledby="exampleModalLabel"  aria-modal="true" role="dialog">
         <div class="modal-dialog lost" style="text-align: center;">
-            <img src="/assets/img/concurso/L{{$img}}.png" style="width: 282px;" alt="Perdiste">
+            <img src="/assets/img/concurso/lose.png" style="width: 282px;" alt="Perdiste">
         </div>
     </div>
 
