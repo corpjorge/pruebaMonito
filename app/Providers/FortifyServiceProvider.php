@@ -37,6 +37,12 @@ class FortifyServiceProvider extends ServiceProvider
         });
 
         Fortify::authenticateUsing(function (Request $request) {
+
+             $request->validate([
+                'condiciones' => 'required|',
+                'document' => 'required',
+            ]);
+
             $user = User::where('document', $request->document)->first();
             if ($user) {  return $user; }
         });

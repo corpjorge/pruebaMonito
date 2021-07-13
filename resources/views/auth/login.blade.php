@@ -40,8 +40,8 @@
             <div class="col-lg-6">
                 <div class="signup-content-wrapper">
                     <div class="section-title">
-                        <h3 class="mb-20">Concursa por grandes premios</h3>
-                        <p>Ingresa tu numero de cedula y participa para ganar increíbles premios.</p>
+                        <h3 class="mb-20">Celebra junto con nosotros nuestro aniversario número 50</h3>
+                        <p>Tu eres nuestro invitado especial, ingresa tu número de cédula y participa para ganar increíbles premios.</p>
                     </div>
                     <div class="image">
                         <img src="/assets/img/concurso/login.png" alt="" class="w-100">
@@ -58,26 +58,34 @@
 
                     <form method="post" action="{{ route('login') }}" class="signup-form">
                         @if ($errors->has('email'))
-                        <div class="alert alert-info" role="alert" style="color: white">{{ $errors->first('email')
+                        <div class="alert alert-danger" role="alert" style="color: white">{{ $errors->first('email')
                             }}
                         </div>
                         @endif
                         @if ($errors->has('document'))
-                        <div class="alert alert-info" role="alert" style="color: white">
+                        <div class="alert alert-danger" role="alert" style="color: #323450">
                             {{ $errors->first('document') }}
                         </div>
                         @endif
+
+                        @if ($errors->has('condiciones'))
+                        <div class="alert alert-danger" role="alert" style="color: #323450">
+                            {{ $errors->first('condiciones') }}
+                        </div>
+                        @endif
+
                         @csrf
                         <div class="single-input">
-                            <label htmlFor="signup-password">Cedula</label>
+                            <label htmlFor="signup-password">Cédula</label>
                             <input type="number" id="signup-password" name="document"
-                                   placeholder="Ingrese cedula">
+                                   placeholder="Ingrese cédula">
                             <input type="hidden" name="password" value="password">
                         </div>
+                        <a href="/assets/FEDEF.pdf" target="_blank">Clic para ver términos y condiciones </a>
                         <div class="form-check mb-25">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <input class="form-check-input" type="checkbox" id="agree" name="condiciones">
                             <label class="form-check-label" htmlFor="flexCheckDefault">
-                                Acepto los términos y la política.
+                                Acepto términos y condiciones.
                             </label>
                         </div>
                         <div class="signup-button mb-25">

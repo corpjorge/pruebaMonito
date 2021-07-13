@@ -108,10 +108,15 @@ var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
 var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "p-4 p-md-5 mb-4 text-white rounded bg-dark"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "col-md-6 px-0"
+  "class": "col px-0"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
-  "class": "lead my-3"
-}, "Responde de manera correcta las preguntas para poder participar en el sorteo.")])], -1
+  "class": "lead",
+  style: {
+    "font-size": "2.25rem",
+    "font-weight": "400",
+    "line-height": "38px"
+  }
+}, " Responde de manera correcta las preguntas para poder participar en el sorteo.")])], -1
 /* HOISTED */
 );
 

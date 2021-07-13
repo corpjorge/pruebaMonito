@@ -1,0 +1,39 @@
+@media only screen and (min-width: 610px) {
+    body {
+        background-image: url("/assets/img/concurso/maquina.jpg");
+        background-size: 100% 150%;
+    }
+
+    .walk-container {
+        width: 9%;
+    }
+
+    .walk-container > div {
+        top: -32px;
+        left: 0px;
+        width: 128px;
+        height: 169px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    body {
+        background-image: url("/assets/img/concurso/maquina_3.jpg");
+        background-size: 100% 150%;
+    }
+
+    .walk-container {
+        width: 33%;
+    }
+
+    .walk-container > div {
+        top: 23px;
+        left: -21px;
+        width: 128px;
+        height: 146px;
+    }
+
+
+}

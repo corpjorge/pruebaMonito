@@ -13,30 +13,23 @@
         <link rel="stylesheet" href="/assets/css/glightbox.min.css"/>
         <link rel="stylesheet" href="/assets/css/animate.css"/>
         <link rel="stylesheet" href="/assets/css/lindy-uikit.css"/>
+        <link rel="stylesheet" href="/assets/css/slots.css"/>
         <style>
 
             body {
                 margin: 0;
-                background-image: url("/assets/img/concurso/maquina.jpg");
                 background-repeat: no-repeat;
-                background-size: 100% 150%;
             }
 
             .walk-container {
                 display: inline-block;
                 position: relative;
-                width: 9%;
                 vertical-align: middle;
             }
 
             .walk-container > div {
                 display: inline-block;
                 position: absolute;
-                top: -32px;
-                left: 0px;
-                width: 128px;
-                /*height: 202px;*/
-                height: 169px;
                 background: url('/assets/img/concurso/icons1.png') repeat-y;
                 background-position-x: 9px;
             }
@@ -170,7 +163,6 @@
     </div>
 
     <div class="centro" style="margin-top: 0%;">
-<!--        <button  onclick="run()"  class="button button-lg radius-50 ">Girar</button>-->
         <button onclick="run()" class="pushable radius-50" id="girar" style="margin-top: 168px;">
             <span class="front">
                 Comenzar a Girar
@@ -183,6 +175,7 @@
             <img src="/assets/img/concurso/lose.png" style="width: 282px;" alt="Perdiste">
         </div>
     </div>
+<!--    <script src="/assets/js/confetti.js"></script>-->
 
     <script>
         function run() {

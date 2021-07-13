@@ -68,10 +68,10 @@ var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h3", {
   "class": "mb-25 wow fadeInUp",
   "data-wow-delay": ".2s"
-}, "Como participar"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
+}, "¿Cómo participar? "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
   "class": "mb-30 wow fadeInUp",
   "data-wow-delay": ".4s"
-}, " Responde las preguntas de manera correcta y participa en girar el reel y lograr completar los 3 logos de para ganar. ")], -1
+}, " Responde las preguntas de manera correcta y participa girando la máquina de premios. Ganaras cuando se alineen nuestra imagen. ")], -1
 /* HOISTED */
 );
 
@@ -79,7 +79,7 @@ var _hoisted_7 = {
   "class": "content"
 };
 
-var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"single-item\" data-v-3b49113d><div class=\"icon\" data-v-3b49113d><i class=\"lni lni-pencil-alt\" data-v-3b49113d></i></div><div class=\"text\" data-v-3b49113d><h6 class=\"mb-10\" data-v-3b49113d>Encuesta</h6><p data-v-3b49113d>Responde las preguntas de manera correcta. </p></div></div><div class=\"single-item\" data-v-3b49113d><div class=\"icon\" data-v-3b49113d><i class=\"lni lni-medall\" data-v-3b49113d></i></div><div class=\"text\" data-v-3b49113d><h6 class=\"mb-10\" data-v-3b49113d>Concurso</h6><p data-v-3b49113d>3 oportunidades para gira y lograr los tres logos ganadores.</p></div></div>", 2);
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"single-item\" data-v-3b49113d><div class=\"icon\" data-v-3b49113d><i class=\"lni lni-pencil-alt\" data-v-3b49113d></i></div><div class=\"text\" data-v-3b49113d><h6 class=\"mb-10\" data-v-3b49113d>Encuesta</h6><p data-v-3b49113d>Selecciona la respuesta correcta en cada pregunta.</p></div></div><div class=\"single-item\" data-v-3b49113d><div class=\"icon\" data-v-3b49113d><i class=\"lni lni-medall\" data-v-3b49113d></i></div><div class=\"text\" data-v-3b49113d><h6 class=\"mb-10\" data-v-3b49113d>Concurso</h6><p data-v-3b49113d>Gira la máquina de premios y prueba tu suerte.</p></div></div>", 2);
 
 var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "about-image",
@@ -105,7 +105,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     style: {
       "cursor": "pointer"
     }
-  }, "Comenzar")])])])])]), _hoisted_10]);
+  }, "¡Empezar a Jugar!")])])])])]), _hoisted_10]);
 });
 
 /***/ }),

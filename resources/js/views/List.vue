@@ -5,9 +5,9 @@
                 <div class="col-xl-5 offset-xl-7 col-lg-6 offset-lg-6">
                     <div class="about-content-wrapper">
                         <div class="section-title">
-                            <h3 class="mb-25 wow fadeInUp" data-wow-delay=".2s">Como participar</h3>
+                            <h3 class="mb-25 wow fadeInUp" data-wow-delay=".2s">¿Cómo participar? </h3>
                             <p class="mb-30 wow fadeInUp" data-wow-delay=".4s">
-                                Responde las preguntas de manera correcta y participa en girar el reel y lograr completar los 3 logos de para ganar.
+                                Responde las preguntas de manera correcta y participa girando la máquina de premios. Ganaras cuando se alineen nuestra imagen.
                             </p>
                         </div>
                         <div class="content">
@@ -17,7 +17,7 @@
                                 </div>
                                 <div class="text">
                                     <h6 class="mb-10">Encuesta</h6>
-                                    <p>Responde las preguntas de manera correcta. </p>
+                                    <p>Selecciona la respuesta correcta en cada pregunta.</p>
                                 </div>
                             </div>
                             <div class="single-item">
@@ -26,11 +26,11 @@
                                 </div>
                                 <div class="text">
                                     <h6 class="mb-10">Concurso</h6>
-                                    <p>3 oportunidades para gira y lograr los tres logos ganadores.</p>
+                                    <p>Gira la máquina de premios y prueba tu suerte.</p>
                                 </div>
                             </div>
 
-                            <button @click="next" class="button button-lg radius-10 btn-block" type="button" style="cursor: pointer;">Comenzar</button>
+                            <button @click="next" class="button button-lg radius-10 btn-block" type="button" style="cursor: pointer;">¡Empezar a Jugar!</button>
                         </div>
                     </div>
                 </div>
