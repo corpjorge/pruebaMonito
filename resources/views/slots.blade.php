@@ -188,6 +188,7 @@
         function run() {
             const music = new Audio('/assets/img/concurso/cancion3.mp3');
             music.play();
+            music.volume = 0.2;
             // music.loop =true;
             // music.playbackRate = 2;
             // music.pause();
