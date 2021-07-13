@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="/assets/css/glightbox.min.css"/>
     <link rel="stylesheet" href="/assets/css/animate.css"/>
     <link rel="stylesheet" href="/assets/css/lindy-uikit.css"/>
+
+    
 </head>
 
 <body class="antialiased">
