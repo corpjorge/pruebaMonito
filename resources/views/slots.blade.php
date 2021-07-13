@@ -32,11 +32,11 @@
             .walk-container > div {
                 display: inline-block;
                 position: absolute;
-                top: -28px;
-                left: -9px;
+                top: -38px;
+                left: 0px;
                 width: 128px;
                 /*height: 202px;*/
-                height: 177px;
+                height: 191px;
                 background: url('/assets/img/concurso/icons1.png') repeat-y;
                 background-position-x: 9px;
             }
@@ -122,18 +122,18 @@
             }
 
             .pushable {
-                background: hsl(340deg 100% 32%);
+                background: hsl(345deg 100% 18%);
                 border: none;
-                border-radius: 12px;
+                border-radius: 57px;
                 padding: 0;
                 cursor: pointer;
             }
             .front {
                 display: block;
                 padding: 12px 42px;
-                border-radius: 12px;
+                border-radius: 57px;;
                 font-size: 1.25rem;
-                background: hsl(130deg 60% 41%);
+                background: hsl(323deg 100% 44%);;
                 color: white;
                 transform: translateY(-4px);
             }
@@ -171,7 +171,7 @@
 
     <div class="centro" style="margin-top: 0%;">
 <!--        <button  onclick="run()"  class="button button-lg radius-50 ">Girar</button>-->
-        <button onclick="run()" class="pushable" id="girar">
+        <button onclick="run()" class="pushable radius-50" id="girar" style="margin-top: 168px;">
             <span class="front">
                 Comenzar a Girar
             </span>
