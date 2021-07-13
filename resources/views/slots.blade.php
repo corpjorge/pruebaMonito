@@ -150,8 +150,6 @@
     </head>
     <body>
 
-<!--    <canvas id="my-canvas"></canvas>-->
-
     <div class="centro">
         <div class="walk-container" id="walk-container-one">
             <div></div>
@@ -179,7 +177,7 @@
     </div>
 
 
-    <script src="/assets/js/confetti.js"></script>
+<!--    <script src="/assets/js/confetti.js"></script>-->
 
     <script>
         function run() {
