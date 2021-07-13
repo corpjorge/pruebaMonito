@@ -65,7 +65,6 @@
             @keyframes one {
                 from { background-position-y: 5px }
                 to { background-position-y: {{$one}}px }
-                /*100% {background-position-y: -11220px}*/
             }
 
             @keyframes two {
@@ -80,7 +79,6 @@
 
             .centro {
                 height: 150px;
-                /*IMPORTANTE*/
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -145,8 +143,6 @@
                 padding: 5px;
                 margin-top: 22%;
             }
-
-
         </style>
     </head>
     <body>
@@ -177,17 +173,11 @@
         </div>
     </div>
 
-
-<!--    <script src="/assets/js/confetti.js"></script>-->
-
     <script>
         function run() {
             const music = new Audio('/assets/img/concurso/cancion3.mp3');
             music.play();
             music.volume = 0.2;
-            // music.loop =true;
-            // music.playbackRate = 2;
-            // music.pause();
 
             const one = document.getElementById('walk-container-one');
             const two = document.getElementById('walk-container-two');
@@ -204,13 +194,9 @@
             three.classList.add('walk-container-three-finalized');
 
             setTimeout(function(){
-
                 const lost = document.getElementById('lost').style.display = "block";
-
             }, 13000);
-
         }
-
     </script>
 
     <script>
@@ -218,6 +204,6 @@
         var confetti = new ConfettiGenerator(confettiSettings);
         confetti.render();
     </script>
-
+    
     </body>
 </html>
