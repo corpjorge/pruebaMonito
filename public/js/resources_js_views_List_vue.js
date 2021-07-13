@@ -71,7 +71,7 @@ var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
 }, "¿Cómo participar? "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
   "class": "mb-30 wow fadeInUp",
   "data-wow-delay": ".4s"
-}, " Responde las preguntas de manera correcta y participa girando la máquina de premios. Ganaras cuando se alineen nuestra imagen. ")], -1
+}, " Responde las preguntas de manera correcta y participa girando la máquina de premios. Ganaras cuando se alineen nuestros logos. ")], -1
 /* HOISTED */
 );
 

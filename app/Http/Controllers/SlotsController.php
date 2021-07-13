@@ -8,7 +8,7 @@ class SlotsController extends Controller
 {
     public function slots()
     {
-        $win = false;
+        $win = true;
 
         $option =  rand(1,10);
         $rand_one = '-'.rand(1,120120);

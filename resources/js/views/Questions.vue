@@ -4,12 +4,8 @@
         <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
             <div class="col px-0">
                 <p class="lead" style="font-size: 2.25rem; font-weight: 400; line-height: 38px;"> Responde de manera correcta las preguntas para poder participar en el sorteo.</p>
+                <p>*Recuerda que si no conoces alguna de las respuestas podrás encontrarlas navegando nuestra pagina WEB</p>
             </div>
-        </div>
-
-        <div v-if="message" class="alert alert-warning" role="alert" style="padding: 11px; margin: 8px;">
-            Error en tus respuestas, intenta de nuevo
-            <button @click="close" type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
 
         <template v-for="(question, index) in questions">
@@ -80,7 +76,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        Has respondido correctamente las respuestas, ahora entra a participar en el sorteo intenta ganar
+                        Has respondido correctamente las preguntas, ahora entra a participar en el sorteo e intenta ganar
                     </div>
                     <div class="modal-footer">
                         <button @click="participate" type="button" class="btn btn-success btn-group">Ir a participar
