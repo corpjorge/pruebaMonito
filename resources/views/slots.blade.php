@@ -32,6 +32,7 @@
                 position: absolute;
                 background: url('/assets/img/concurso/icons1.png') repeat-y;
                 background-position-x: 9px;
+                opacity: 0.7;
             }
 
             .walk-container-one > div {
