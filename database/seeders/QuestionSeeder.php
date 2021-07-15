@@ -151,9 +151,9 @@ class QuestionSeeder extends Seeder
 
         DB::table('questions')->insert([
             'id' => 16,
-            'title' => '¿Cada cuánto tiempo  debo realizar mi actualización de datos?',
-            'answer' => '16_0',
-            'choices' => '{ "a": "3 AÑOS", "b": "1 AÑO", "c": "5 AÑOS", "d": "2 AÑOS" }',
+            'title' => '¿Cada cuánto tiempo debo realizar mi actualización de datos?',
+            'answer' => '16_b',
+            'choices' => '{ "a": "3 AÑOS", "b": "1 AÑO (Correcta)", "c": "5 AÑOS", "d": "2 AÑOS" }',
             'created_at' => now(),
             'updated_at' => now()
         ]);
@@ -161,8 +161,8 @@ class QuestionSeeder extends Seeder
         DB::table('questions')->insert([
             'id' => 17,
             'title' => '¿Con qué canales cuenta FEDEF para realizar mis pagos?',
-            'answer' => '17_0',
-            'choices' => '{ "a": "PSE, BANCO BOGOTA, TRANSFERENCIA ELECTRONICA", "b": "PUNTOS DE PAGO EN LAS OFICINAS ", "c": "EFECTY, SERVIENTREGA, DIMONEX", "d": "TODAS LAS ANTERIORES" }',
+            'answer' => '17_d',
+            'choices' => '{ "a": "PSE, BANCO BOGOTA, TRANSFERENCIA ELECTRONICA", "b": "PUNTOS DE PAGO EN LAS OFICINAS ", "c": "EFECTY, SERVIENTREGA, DIMONEX", "d": "TODAS LAS ANTERIORES (Correcta)" }',
             'created_at' => now(),
             'updated_at' => now()
         ]);
@@ -170,8 +170,8 @@ class QuestionSeeder extends Seeder
         DB::table('questions')->insert([
             'id' => 18,
             'title' => '¿Cuáles son los canales de los que dispone FEDEF para mi  atención ?',
-            'answer' => '18_0',
-            'choices' => '{ "a": "OFICINAS, LINEAS TELEFONICAS", "b": "WHATSAPP, CORREO ELECTRONICO", "c": "REDES SOCIALES", "d": "TODAS LAS ANTERIORES" }',
+            'answer' => '18_d',
+            'choices' => '{ "a": "OFICINAS, LINEAS TELEFONICAS", "b": "WHATSAPP, CORREO ELECTRONICO", "c": "REDES SOCIALES", "d": "TODAS LAS ANTERIORES (Correcta)" }',
             'created_at' => now(),
             'updated_at' => now()
         ]);
@@ -179,8 +179,8 @@ class QuestionSeeder extends Seeder
         DB::table('questions')->insert([
             'id' => 19,
             'title' => '¿Dónde puedo conocer noticias y actualizaciones de Fedef ?',
-            'answer' => '19_0',
-            'choices' => '{ "a": "PERIODICO", "b": "REVISTAS", "c": "REDES SOCIALES, PAGINA WEB Y OFICINAS", "d": "NUNGUNA DE LAS ANTERIORES" }',
+            'answer' => '19_c',
+            'choices' => '{ "a": "PERIODICO", "b": "REVISTAS", "c": "REDES SOCIALES, PAGINA WEB Y OFICINAS (Correcta)", "d": "NUNGUNA DE LAS ANTERIORES" }',
             'created_at' => now(),
             'updated_at' => now()
         ]);
@@ -244,6 +244,13 @@ class QuestionSeeder extends Seeder
             'title' => 'Las oficinas de Fedef están ubicadas en:',
             'answer' => '26_b',
             'choices' => '{ "a": "tokio, roma, Suba", "b": "Funza, Facatativá, Suba (Correcta)", "c": "Zipaquirá, Cartagena, Funza", "d": "Fusagasugá, Facatativá, Madrid" }',
+            'created_at' => now(),
+            'updated_at' => now()
+        ]);
+
+        DB::table('awards')->insert([
+            'id' => 1,
+            'winner' => 11,
             'created_at' => now(),
             'updated_at' => now()
         ]);

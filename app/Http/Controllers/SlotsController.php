@@ -2,20 +2,51 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Award;
+use App\Models\Participant;
+use App\Models\Winner;
 use Illuminate\Http\Request;
+
 
 class SlotsController extends Controller
 {
     public function slots()
     {
-        $win = false;
+        if (!auth()->user()->go){
+            auth()->logout();
+            return redirect('/');
+        }
+
+        auth()->user()->update([ 'go' => null ]);
+
+        $exists = Winner::where('user_id', auth()->user()->id)->exists();
+
+        if ($exists){
+            return view('final');
+        }
+
+        $participant = new Participant;
+        $participant->user_id = auth()->user()->id;
+        $participant->save();
+
+        $winner = Award::where('winner',$participant->id)->exists();
+
+        $turn = $participant->id;
+
+        if ($winner){
+            $win = true;
+            $img = 'win.png';
+            $participant->winner = 1;
+            $participant->save();
+        } else {
+            $img = 'lose.png';
+            $win = false;
+        }
 
         $option =  rand(1,10);
         $rand_one = '-'.rand(1,120120);
         $rand_two = '-'.rand(1,120120);
         $rand_three = '-'.rand(1,120120);
-
-        $img = rand(1,2);
 
         if ($win){
             $option = 11;
@@ -87,6 +118,32 @@ class SlotsController extends Controller
             $three = -16220;
         }
 
-        return view('slots', compact('one', 'two', 'three', 'img' ));
+        return view('slots', compact('one', 'two', 'three', 'img', 'turn' ));
     }
+
+    public function run(Request $request)
+    {
+        $participant = Participant::where('id', $request->he)->where('user_id', auth()->user()->id)->first();
+        $participant->turn = 1;
+        $participant->save();
+    }
+
+    public function verify(Request $request)
+    {
+        $participant = Participant::where('id', $request->he)->where('user_id', auth()->user()->id)->where('winner',1)->first();
+
+        if ($participant){
+            $winner = new Winner;
+            $winner->user_id = auth()->user()->id;
+            $winner->save();
+        }
+
+    }
+
+    public function obtain(Request $request)
+    {
+
+
+    }
+
 }

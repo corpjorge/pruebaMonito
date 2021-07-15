@@ -28,6 +28,8 @@ class QuestionController extends Controller
         $question_2 = $questions->where('answer', $request->question_2)->exists();
         if (!$question_2){ return response()->json([ 'R' => false ]); }
 
+        auth()->user()->update([ 'go' => 1 ]);
+
         return response()->json([ 'R' => true ]);
 
     }

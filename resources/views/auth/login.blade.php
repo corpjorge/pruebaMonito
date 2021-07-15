@@ -6,7 +6,7 @@
     <title>Concurso</title>
     <meta name="description" content=""/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.svg"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/concurso/favicon.ico"/>
 
     <!-- ========================= CSS here ========================= -->
     <link rel="stylesheet" href="/assets/css/bootstrap-5.0.0-alpha-2.min.css"/>
@@ -84,7 +84,7 @@
                         <a href="/assets/FEDEF.pdf" target="_blank">Clic para ver términos y condiciones </a>
                         <div class="form-check mb-25">
                             <input class="form-check-input" type="checkbox" id="agree" name="condiciones">
-                            <label class="form-check-label" htmlFor="flexCheckDefault">
+                            <label class="form-check-label" for="agree">
                                 Acepto términos y condiciones.
                             </label>
                         </div>

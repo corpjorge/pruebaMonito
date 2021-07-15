@@ -14,11 +14,13 @@
         <link rel="stylesheet" href="/assets/css/animate.css"/>
         <link rel="stylesheet" href="/assets/css/lindy-uikit.css"/>
         <link rel="stylesheet" href="/assets/css/slots.css"/>
-        <style>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
+        <style>
             body {
                 margin: 0;
                 background-repeat: no-repeat;
+                background-color: #004679;
             }
 
             .walk-container {
@@ -120,6 +122,7 @@
                 padding: 0;
                 cursor: pointer;
             }
+
             .front {
                 display: block;
                 padding: 12px 42px;
@@ -129,9 +132,11 @@
                 color: white;
                 transform: translateY(-4px);
             }
+
             .pushable:active .front {
                 transform: translateY(-2px);
             }
+
             .pushable:focus:not(:focus-visible) {
                 outline: none;
             }
@@ -146,6 +151,23 @@
         </style>
     </head>
     <body>
+
+    <div class="preloader">
+        <div class="loader">
+            <div class="spinner">
+                <div class="spinner-container">
+                    <div class="spinner-rotator">
+                        <div class="spinner-left">
+                            <div class="spinner-circle"></div>
+                        </div>
+                        <div class="spinner-right">
+                            <div class="spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="centro">
         <div class="walk-container" id="walk-container-one">
@@ -169,12 +191,13 @@
 
     <div class="modal fade show" id="lost" tabindex="-1" aria-labelledby="exampleModalLabel"  aria-modal="true" role="dialog">
         <div class="modal-dialog lost" style="text-align: center;">
-            <img src="/assets/img/concurso/lose.png" style="width: 282px;" alt="Perdiste">
+            <img src="/assets/img/concurso/{{$img}}" style="width: 282px;" alt="Perdiste">
         </div>
     </div>
 
     <script>
         function run() {
+
             const music = new Audio('/assets/img/concurso/cancion3.mp3');
             music.play();
             music.volume = 0.2;
@@ -194,16 +217,19 @@
             three.classList.add('walk-container-three-finalized');
 
             setTimeout(function(){
+                axios.post('/run', { he: <?php echo $turn ?> });
+                const lost = document.getElementById('lost').style.display = "block";
+            }, 10000);
+
+            setTimeout(function(){
+                axios.post('/verify', { he: <?php echo $turn ?> });
+                // axios.post('/logout');
                 const lost = document.getElementById('lost').style.display = "block";
             }, 13000);
         }
     </script>
 
-    <script>
-        var confettiSettings = { target: 'my-canvas' };
-        var confetti = new ConfettiGenerator(confettiSettings);
-        confetti.render();
-    </script>
-    
+    <script src="/assets/js/wow.min.js"></script>
+    <script src="/assets/js/main.js"></script>
     </body>
 </html>

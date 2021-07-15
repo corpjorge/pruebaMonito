@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <img src="assets/img/concurso/banner.jpg" alt="" style="width: 100%;"/>
-        <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+        <div class="p-4 p-md-5 mb-4 text-white  bg-dark">
             <div class="col px-0">
                 <p class="lead" style="font-size: 2.25rem; font-weight: 400; line-height: 38px;"> Responde de manera correcta las preguntas para poder participar en el sorteo.</p>
                 <p>*Recuerda que si no conoces alguna de las respuestas podrás encontrarlas navegando nuestra pagina WEB</p>
@@ -73,7 +73,6 @@
                 <div class="modal-content">
                     <div class="modal-header alert alert-success">
                         <h5 class="modal-title" id="exampleModalLabel">Felicitaciones</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         Has respondido correctamente las preguntas, ahora entra a participar en el sorteo e intenta ganar
@@ -92,7 +91,6 @@
                 <div class="modal-content">
                     <div class="modal-header alert alert-danger">
                         <h5 class="modal-title" id="exampleModalLabel">Incorrecto</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body" style="color: #862828">
                         Error en tus respuestas, intenta de nuevo
