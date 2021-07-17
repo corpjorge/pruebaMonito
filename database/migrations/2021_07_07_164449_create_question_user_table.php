@@ -16,7 +16,6 @@ class CreateQuestionUserTable extends Migration
         Schema::create('question_user', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained();
-            $table->foreignId('question_id')->constrained();
             $table->string('answer');
             $table->timestamps();
         });

@@ -199,7 +199,7 @@
         </div>
     </a>
     @else
-    <a href=" {{ url('/') }} ">
+    <a href=" {{ url('/close') }} ">
         <div class="modal fade show" id="lost" tabindex="-1" aria-labelledby="exampleModalLabel"  aria-modal="true" role="dialog">
             <div class="modal-dialog lost" style="text-align: center;">
                 <img src="/assets/img/concurso/lose.png" style="width: 282px;" alt="Perdiste">

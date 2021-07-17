@@ -154,6 +154,12 @@ class SlotsController extends Controller
 
     }
 
+    public function close()
+    {
+        auth()->logout();
+        return redirect('/');
+    }
+
     public function congratulations(Request $request)
     {
         $winner = Winner::where('user_id', auth()->user()->id)->first();
