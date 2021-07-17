@@ -189,11 +189,24 @@
         </button>
     </div>
 
-    <div class="modal fade show" id="lost" tabindex="-1" aria-labelledby="exampleModalLabel"  aria-modal="true" role="dialog">
-        <div class="modal-dialog lost" style="text-align: center;">
-            <img src="/assets/img/concurso/{{$img}}" style="width: 282px;" alt="Perdiste">
+
+    @if($win)
+    <a href=" {{ url('/congratulations') }} ">
+        <div class="modal fade show" id="lost" tabindex="-1" aria-labelledby="exampleModalLabel"  aria-modal="true" role="dialog">
+            <div class="modal-dialog lost" style="text-align: center;">
+                <img src="/assets/img/concurso/win.png" style="width: 282px;" alt="win">
+            </div>
         </div>
-    </div>
+    </a>
+    @else
+    <a href=" {{ url('/') }} ">
+        <div class="modal fade show" id="lost" tabindex="-1" aria-labelledby="exampleModalLabel"  aria-modal="true" role="dialog">
+            <div class="modal-dialog lost" style="text-align: center;">
+                <img src="/assets/img/concurso/lose.png" style="width: 282px;" alt="Perdiste">
+            </div>
+        </div>
+    </a>
+    @endif
 
     <script>
         function run() {
@@ -223,7 +236,7 @@
 
             setTimeout(function(){
                 axios.post('/verify', { he: <?php echo $turn ?> });
-                // axios.post('/logout');
+                axios.post('/logout');
                 const lost = document.getElementById('lost').style.display = "block";
             }, 13000);
         }

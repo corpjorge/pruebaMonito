@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\Turn;
 use App\Models\Award;
 use App\Models\Participant;
 use App\Models\Winner;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 
 class SlotsController extends Controller
@@ -34,12 +36,16 @@ class SlotsController extends Controller
         $turn = $participant->id;
 
         if ($winner){
+
             $win = true;
-            $img = 'win.png';
             $participant->winner = 1;
             $participant->save();
+
+            $text = 'Turno usado';
+
+            Mail::to('corpjorge@hotmail.com')->cc('jorge.peralta@fyclsingenieria.com')->send(new turn($text));
+
         } else {
-            $img = 'lose.png';
             $win = false;
         }
 
@@ -118,7 +124,7 @@ class SlotsController extends Controller
             $three = -16220;
         }
 
-        return view('slots', compact('one', 'two', 'three', 'img', 'turn' ));
+        return view('slots', compact('one', 'two', 'three', 'win', 'turn' ));
     }
 
     public function run(Request $request)
@@ -126,6 +132,11 @@ class SlotsController extends Controller
         $participant = Participant::where('id', $request->he)->where('user_id', auth()->user()->id)->first();
         $participant->turn = 1;
         $participant->save();
+
+        if ($participant->winner){
+            $text = 'Turno ganador girado';
+            Mail::to('corpjorge@hotmail.com')->cc('jorge.peralta@fyclsingenieria.com')->send(new turn($text));
+        }
     }
 
     public function verify(Request $request)
@@ -136,14 +147,21 @@ class SlotsController extends Controller
             $winner = new Winner;
             $winner->user_id = auth()->user()->id;
             $winner->save();
+
+            $text = 'Turno ganador visto';
+            Mail::to('corpjorge@hotmail.com')->cc('jorge.peralta@fyclsingenieria.com')->send(new turn($text));
         }
 
     }
 
-    public function obtain(Request $request)
+    public function congratulations(Request $request)
     {
-
-
+        $winner = Winner::where('user_id', auth()->user()->id)->first();
+        $winner->verify = 1;
+        $winner->save();
+        $text = 'Premio Reclamado';
+        Mail::to('corpjorge@hotmail.com')->cc('jorge.peralta@fyclsingenieria.com')->send(new turn($text));
+        return view('congratulations');
     }
 
 }

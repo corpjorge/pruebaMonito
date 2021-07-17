@@ -155,7 +155,6 @@ export default {
         },
         participate() {
             window.location.assign("/slots")
-            // this.$router.push({ name: 'Slots' })
         },
         close() {
             this.show = false;

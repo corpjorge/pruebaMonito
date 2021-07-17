@@ -12,6 +12,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('/finish', [QuestionController::class, 'finish']);
     Route::post('/run', [SlotsController::class, 'run']);
     Route::post('/verify', [SlotsController::class, 'verify']);
+    Route::get('/congratulations', [SlotsController::class, 'congratulations']);
 
     Route::get('/concurso', function () {  return view('welcome'); });
     Route::get('/slots', [SlotsController::class, 'slots']);

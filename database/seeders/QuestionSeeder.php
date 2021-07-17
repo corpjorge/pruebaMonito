@@ -250,7 +250,7 @@ class QuestionSeeder extends Seeder
 
         DB::table('awards')->insert([
             'id' => 1,
-            'winner' => 11,
+            'winner' => 5,
             'created_at' => now(),
             'updated_at' => now()
         ]);
