@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Question;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Validation\ValidationException;
@@ -36,7 +37,7 @@ class Auth extends Controller
 
     public function temp(Request $request)
     {
-        return view('temp', [ 'gifts' => Gift::all()]);
+        return view('temp', [ 'questions' => Question::all()]);
     }
 
 

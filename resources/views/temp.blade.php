@@ -1,6 +1,6 @@
-@foreach($gifts as $gift)
+@foreach($questions as $question)
 
-    DB::table('gifts')->insert([
+    DB::table('questions')->insert([
 <br>
         'id' => {{ $gift->id }},
 <br>
