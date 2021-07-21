@@ -41,7 +41,7 @@
                     <div class="col-lg-6 col-xl-5 offset-xl-1">
                         <div class="login-content-wrapper">
                             <div class="section-title mb-40">
-                                <h3 class="mb-20">Lo sentimos</h3>
+                                <h3 class="mb-20">Te informamos que:</h3>
                                 <p>FEDEF premia a los asociados que pagan cumplidamente sus obligaciones económicas con el Fondo y a quienes actualizan sus datos personales cada año,
                                     le invitamos a ser más oportuno(a) en sus pagos y a actualizar sus datos personales,
                                     para que pueda participar en próximos eventos y recibir los beneficios de FEDEF.</p>
