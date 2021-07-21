@@ -7,6 +7,7 @@ use App\Http\Controllers\WinnerController;
 use Illuminate\Support\Facades\Route;
 
 
+
 Route::group(['middleware' => 'auth'], function () {
     Route::get('/me', [Auth::class, 'user']);
     Route::get('/questions', [QuestionController::class, 'questions']);
@@ -25,10 +26,9 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/concurso', function () {  return view('welcome'); });
     Route::get('/slots', [SlotsController::class, 'slots']);
 
-
-
-
 });
+
+Route::get('/locked', [WinnerController::class, 'locked']);
 
 Route::get('/', function () {  return redirect('/login'); });
 

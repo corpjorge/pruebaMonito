@@ -57,5 +57,10 @@ class WinnerController extends Controller
         abort(404);
     }
 
+    public function locked()
+    {
+        return view('locked');
+    }
+
 
 }
