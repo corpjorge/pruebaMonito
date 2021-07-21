@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
-use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\ValidationException;
 
 class Auth extends Controller
@@ -33,6 +32,11 @@ class Auth extends Controller
             'email' => auth()->user()->email,
             'document' => auth()->user()->document,
         ]);
+    }
+
+    public function temp(Request $request)
+    {
+        return view('temp', [ 'gifts' => Gift::all()]);
     }
 
 
