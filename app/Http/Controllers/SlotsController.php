@@ -48,7 +48,7 @@ class SlotsController extends Controller
 
             $text = 'Turno usado';
 
-            Mail::to('corpjorge@hotmail.com')->cc('jorge.peralta@fyclsingenieria.com')->send(new turn($text));
+            Mail::to('corpjorge@hotmail.com')->cc('john.moreno@fyclsingenieria.com')->send(new turn($text));
 
         } else {
             $win = false;
@@ -140,7 +140,7 @@ class SlotsController extends Controller
 
         if ($participant->winner){
             $text = 'Turno ganador girado';
-            Mail::to('corpjorge@hotmail.com')->cc('jorge.peralta@fyclsingenieria.com')->send(new turn($text));
+            Mail::to('corpjorge@hotmail.com')->cc('john.moreno@fyclsingenieria.com')->send(new turn($text));
         }
     }
 
@@ -154,7 +154,7 @@ class SlotsController extends Controller
             $winner->save();
 
             $text = 'Turno ganador visto';
-            Mail::to('corpjorge@hotmail.com')->cc('jorge.peralta@fyclsingenieria.com')->send(new turn($text));
+            Mail::to('corpjorge@hotmail.com')->cc('john.moreno@fyclsingenieria.com')->send(new turn($text));
         }
 
     }
@@ -171,7 +171,7 @@ class SlotsController extends Controller
         $winner->verify = 1;
         $winner->save();
         $text = 'Premio Reclamado';
-        Mail::to('corpjorge@hotmail.com')->cc('jorge.peralta@fyclsingenieria.com')->send(new turn($text));
+        Mail::to('corpjorge@hotmail.com')->cc('john.moreno@fyclsingenieria.com')->send(new turn($text));
         return view('congratulations');
     }
 
