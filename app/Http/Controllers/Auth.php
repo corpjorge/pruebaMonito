@@ -37,7 +37,9 @@ class Auth extends Controller
 
     public function temp(Request $request)
     {
-        return view('temp', [ 'questions' => Question::all()]);
+        echo \Carbon\Carbon::now();
+
+//        return view('temp', [ 'questions' => Question::all()]);
     }
 
 
