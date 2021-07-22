@@ -115,7 +115,7 @@
                         <td>@{{ participant.user.name }}</td>
                         <td>@{{ participant.turn }}</td>
                         <td>@{{ participant.winner }}</td>
-                        <td>@{{ participant.updated_at }}</td>
+                        <td>@{{ participant.created_at }}</td>
                     </tr>
                     </tbody>
                 </table>
