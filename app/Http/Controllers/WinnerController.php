@@ -40,7 +40,7 @@ class WinnerController extends Controller
     public function participants()
     {
         if (auth()->user()->id === 1){
-            return Participant::orderBy('id', 'desc')->get()->load('user');
+            return Participant::orderBy('id', 'desc')->limit(1000)->get()->load('user');
         }
 
         abort(404);

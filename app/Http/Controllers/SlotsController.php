@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Mail\Turn;
 use App\Models\Award;
+use App\Models\Gift;
 use App\Models\Participant;
 use App\Models\Winner;
 use Illuminate\Http\Request;
@@ -32,26 +33,34 @@ class SlotsController extends Controller
             return view('final');
         }
 
-        $participant = new Participant;
-        $participant->user_id = auth()->user()->id;
-        $participant->save();
+        $date = \Carbon\Carbon::now();
+        $gift = Gift::where('exception',1)->whereDate('date', $date->format('Y-m-d'))->first();
 
-        $winner = Award::where('winner',$participant->id)->exists();
-
-        $turn = $participant->id;
-
-        if ($winner){
-
-            $win = true;
-            $participant->winner = 1;
+        if ($gift and auth()->user()->new == 1){
+            $turn = 0;
+            $win = false;
+        } else {
+            $participant = new Participant;
+            $participant->user_id = auth()->user()->id;
             $participant->save();
 
-            $text = 'Turno usado';
+            $winner = Award::where('winner',$participant->id)->exists();
 
-            Mail::to('corpjorge@hotmail.com')->cc('john.moreno@fyclsingenieria.com')->send(new turn($text));
+            $turn = $participant->id;
 
-        } else {
-            $win = false;
+            if ($winner){
+
+                $win = true;
+                $participant->winner = 1;
+                $participant->save();
+
+                $text = 'Turno usado';
+
+                Mail::to('corpjorge@hotmail.com')->cc('john.moreno@fyclsingenieria.com')->send(new turn($text));
+
+            } else {
+                $win = false;
+            }
         }
 
         $option =  rand(1,10);
@@ -135,12 +144,14 @@ class SlotsController extends Controller
     public function run(Request $request)
     {
         $participant = Participant::where('id', $request->he)->where('user_id', auth()->user()->id)->first();
-        $participant->turn = 1;
-        $participant->save();
+        if ($participant){
+            $participant->turn = 1;
+            $participant->save();
 
-        if ($participant->winner){
-            $text = 'Turno ganador girado';
-            Mail::to('corpjorge@hotmail.com')->cc('john.moreno@fyclsingenieria.com')->send(new turn($text));
+            if ($participant->winner){
+                $text = 'Turno ganador girado';
+                Mail::to('corpjorge@hotmail.com')->cc('john.moreno@fyclsingenieria.com')->send(new turn($text));
+            }
         }
     }
 
