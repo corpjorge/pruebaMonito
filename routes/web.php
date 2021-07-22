@@ -26,10 +26,11 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/concurso', function () {  return view('welcome'); });
     Route::get('/slots', [SlotsController::class, 'slots']);
 
+    Route::get('/temp', [Auth::class, 'temp']);
+
 });
 
 Route::get('/locked', [WinnerController::class, 'locked']);
-Route::get('/temp', [Auth::class, 'temp']);
 
 Route::get('/', function () {  return redirect('/login'); });
 

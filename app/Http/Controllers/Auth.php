@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Participant;
 use App\Models\Question;
 use Illuminate\Http\Request;
 use App\Models\User;
@@ -37,9 +38,14 @@ class Auth extends Controller
 
     public function temp(Request $request)
     {
-        echo \Carbon\Carbon::now();
+        if (auth()->user()->id === 1){
+            $participants = Participant::orderBy('id', 'desc')->limit(1000)->get()->load('user');
 
-//        return view('temp', [ 'questions' => Question::all()]);
+             foreach ($participants as $participant){
+                 echo 'id:'.$participant->id.' / turn:'.$participant->turn.' win: '.$participant->winner.' / fecha: '.$participant->created_at;
+                 echo '<br>';
+             }
+        }
     }
 
 
