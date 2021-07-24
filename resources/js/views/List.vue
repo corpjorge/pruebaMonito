@@ -16,7 +16,7 @@
                                     <i class="lni lni-pencil-alt"></i>
                                 </div>
                                 <div class="text">
-                                    <h6 class="mb-10">Encuesta</h6>
+                                    <h6 class="mb-10">Preguntas</h6>
                                     <p>Selecciona la respuesta correcta en cada pregunta.</p>
                                 </div>
                             </div>
