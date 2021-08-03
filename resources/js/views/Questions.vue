@@ -207,4 +207,11 @@ export default {
 }
 
 
+@media only screen and (max-width: 600px) {
+    .col-6 {
+        width: 100%;
+    }
+}
+
+
 </style>
